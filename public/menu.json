@@ -36,28 +36,28 @@
     },
     {
       "id": 6,
-      "image":"",
+      "image":"https://i.ibb.co.com/R9QLh6n/pizza6.png",
       "name": "Product 6",
       "price": "$68.75",
       "button": "Add to Cart"
     },
     {
       "id": 7,
-      "image":"",
+      "image":"https://i.ibb.co.com/5GTmgtw/pizza7.png",
       "name": "Product 7",
       "price": "$62.99",
       "button": "Purchase Now"
     },
     {
       "id": 8,
-      "image":"",
+      "image":"https://i.ibb.co.com/fNTGW1M/pizza8.png",
       "name": "Product 8",
       "price": "$35.00",
       "button": "Add to Cart"
     },
     {
       "id": 9,
-      "image":"",
+      "image":"https://i.ibb.co.com/DgYX4JB/pizza9.png",
       "name": "Product 9",
       "price": "$82.30",
       "button": "Purchase Now"
