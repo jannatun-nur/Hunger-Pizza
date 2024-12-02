@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "image":"https://i.ibb.co.com/qWsG5k6/pizza1.png",
+      "name": "Product 1",
+      "price": "$40.99",
+      "button": "Purchase Now"
+    },
+    {
+      "id": 2,
+      "image":"https://i.ibb.co.com/k5tcrJf/pizza2.png",
+      "name": "Product 2",
+      "price": "$75.49",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 3,
+      "image":"https://i.ibb.co.com/8BtW9SW/pizza3.png",
+      "name": "Product 3",
+      "price": "$50.99",
+      "button": "Purchase Now"
+    },
+    {
+      "id": 4,
+      "image":"https://i.ibb.co.com/NNHXFbz/pizza4.png",
+      "name": "Product 4",
+      "price": "$45.00",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 5,
+      "image":"https://i.ibb.co.com/6twD97y/pizza5.png",
+      "name": "Product 5",
+      "price": "$80.50",
+      "button": "Purchase Now"
+    },
+    {
+      "id": 6,
+      "image":"",
+      "name": "Product 6",
+      "price": "$68.75",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 7,
+      "image":"",
+      "name": "Product 7",
+      "price": "$62.99",
+      "button": "Purchase Now"
+    },
+    {
+      "id": 8,
+      "image":"",
+      "name": "Product 8",
+      "price": "$35.00",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 9,
+      "image":"",
+      "name": "Product 9",
+      "price": "$82.30",
+      "button": "Purchase Now"
+    }
+  ]
