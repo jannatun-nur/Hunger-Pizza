@@ -8,7 +8,7 @@
     position: absolute; 
   }
   #offer-text{
-   right: 20%; 
+   right: 50%; 
     position: relative;
     bottom: -280px; 
     transform: translateX(-50%);
