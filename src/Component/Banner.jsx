@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div>
             <div className="">
-  <div className="hero-content flex-col lg:flex-row-reverse bg-[#17422f]">
+  <div className="hero-content flex-col lg:flex-row-reverse bg-[#17422f] ">
     <img
       src={banner}
       id="banner-image"

@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
+   <div className="bg-white min-h-screen">
    <Banner/>
+   </div>
     </>
   )
 }
