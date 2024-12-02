@@ -1,0 +1,15 @@
+#offer {
+    position: relative;
+    bottom: -95px; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  #holiday {
+    position: absolute; 
+  }
+  #offer-text{
+   right: 20%; 
+    position: relative;
+    bottom: -280px; 
+    transform: translateX(-50%);
+  }
