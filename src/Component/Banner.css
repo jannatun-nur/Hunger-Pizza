@@ -24,3 +24,8 @@
       transform: translateX(0) translateY(0);
     }
   }
+
+  #banner-text{
+    animation: jumping-stairs 3s ease-in-out infinite;
+  
+  }
