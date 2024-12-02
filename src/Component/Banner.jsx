@@ -10,7 +10,7 @@ const Banner = () => {
       id="banner-image"
       className="max-w-sm rounded-lg " />
     <div id="banner-text"> 
-      <h1 className="lg:text-7xl text-5xl text-center  font-thin font-serif ">HUNGER <br></br>
+      <h1 className="lg:text-7xl md:text-6xl text-5xl text-center  font-thin font-serif ">HUNGER <br></br>
       <span className='text-[#59b280] lg:text-9xl font-bold'>PIZZA</span> </h1>
      
     </div>

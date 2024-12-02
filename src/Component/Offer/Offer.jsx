@@ -14,10 +14,10 @@ const Offer = () => {
         </section>
 
         <section id="offer-text" className="text-black text-center">
-          <p className="lg:text-3xl text-[#027361] font-serif">
+          <p className="lg:text-3xl md:text-2xl text-[#027361] font-serif">
             Extra beef mashroom chasse platter
           </p>
-          <p className="lg:text-3xl text-[#027361] font-serif lg:py-4 py-2">
+          <p className="lg:text-3xl md:text-2xl text-[#027361] font-serif lg:py-4 py-2">
             40.98 ${" "}
             <span
               className="text-[#f57d11]
@@ -27,7 +27,7 @@ const Offer = () => {
               ONLY
             </span>
           </p>
-          <button className="lg:text-4xl font-bold text-[#027361] animate-bounce font-serif lg:py-6 py-4">
+          <button className="lg:text-4xl md:text-4xl text-3xl font-bold text-[#027361] animate-bounce font-serif lg:py-6 py-4">
             ORDER <span className="text-[#f57d11]">NOW</span>{" "}
           </button>
         </section>

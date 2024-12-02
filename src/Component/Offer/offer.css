@@ -39,3 +39,22 @@
         transform: translateX(-180%);
       }
   }
+
+  @media (min-width:768px){
+    #offer {
+        position: relative;
+        bottom: -150px; 
+        left: 35%; 
+        transform: translateX(-50%);
+      }
+      #holiday {
+        position: absolute; 
+      }
+     
+      #offer-text{
+        right: 30%; 
+        position: relative;
+        bottom: -250px; 
+        transform: translateX(-180%);
+      }
+  }
