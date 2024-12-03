@@ -1,8 +1,10 @@
+import Swal from "sweetalert2";
+
 const MenuCard = ({ pizzas }) => {
   const { name, image, price } = pizzas;
   return (
     <div>
-      <div className="h-[400px] mx-2 flex flex-col items-center justify-center border border-gray-300 rounded-lg p-5  shadow-lg hover:animate-zoom">
+      <div className="lg:h-[350px] h-[420px] mx-2 flex flex-col items-center justify-center border border-gray-300 rounded-lg p-5  shadow-lg hover:animate-zoom">
         {/* IMAGE AND DETAILS IN FLES MOOD */}
 
         <div className="lg:flex lg:justify-between">
@@ -55,7 +57,10 @@ const MenuCard = ({ pizzas }) => {
             <button
               className="bg-orange-600 text-white py-2 px-6 rounded-lg  font-semibold hover:bg-orange-400 transition-colors
               hover:text-[#027361] "
-              onClick={() => alert("Pizza purchased!")}
+              onClick={() => Swal.fire({
+                        text: "Order has been confirmed.",
+                        icon: "success"
+                        })}
             >
               PURCHASE NOW
             </button>
