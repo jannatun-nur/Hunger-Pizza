@@ -2,7 +2,7 @@ const MenuCard = ({ pizzas }) => {
   const { name, image, price } = pizzas;
   return (
     <div>
-      <div className="h-[400px] mx-2 flex flex-col items-center justify-center border border-gray-300 rounded-lg p-5  shadow-lg">
+      <div className="h-[400px] mx-2 flex flex-col items-center justify-center border border-gray-300 rounded-lg p-5  shadow-lg hover:animate-zoom">
         {/* IMAGE AND DETAILS IN FLES MOOD */}
 
         <div className="lg:flex lg:justify-between">
@@ -10,7 +10,7 @@ const MenuCard = ({ pizzas }) => {
             <img
               src={image}
               alt="Pizza"
-              className="w-36 h-30 rounded-full mb-6"
+              className="lg:w-36 lg:h-30 w-40 ml-5 lg:ml-0 rounded-full mb-6"
             />
           </section>
 
@@ -29,11 +29,11 @@ const MenuCard = ({ pizzas }) => {
             </div>
 
             {/* Rating */}
-            <div className="flex gap-1 mb-3">
+            <div className="flex gap-1 mb-3 ">
               {[...Array(5)].map((_, index) => (
                 <span
                   key={index}
-                  className={`text-lg ${
+                  className={`text-3xl ${
                     index < 4 ? "text-yellow-500" : "text-gray-300"
                   }`}
                 >
@@ -53,7 +53,8 @@ const MenuCard = ({ pizzas }) => {
 
           <section>
             <button
-              className="bg-orange-500 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors"
+              className="bg-orange-600 text-white py-2 px-6 rounded-lg  font-semibold hover:bg-orange-400 transition-colors
+              hover:text-[#027361] "
               onClick={() => alert("Pizza purchased!")}
             >
               PURCHASE NOW
