@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ReviewCard = ( { reviews}) => {
+const ReviewCard = () => {
 
     const data = [
         {
