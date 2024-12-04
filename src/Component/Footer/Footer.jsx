@@ -3,15 +3,15 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center bg[#17422f] text-base-content mt-20 py-5">
-  <nav className="grid grid-flow-col gap-4">
+            <footer className="footer footer-center bg-[#17422f]  mt-20 py-5 text-white">
+  <nav className="grid grid-flow-col gap-4 lg:text-xl">
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <a className="link link-hover">Orders</a>
+    <a className="link link-hover">Payment</a>
   </nav>
   <nav>
-    <div className="grid grid-flow-col gap-4">
+    <div className="grid grid-flow-col gap-4 ">
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
