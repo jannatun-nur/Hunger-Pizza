@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 
 const MenuCard = ({ pizzas }) => {
-  const { name, image, price } = pizzas;
+  const { name, image, price, item , items } = pizzas;
   return (
     <div>
       <div className="lg:h-[350px] h-[420px] mx-2 flex flex-col items-center justify-center rounded-lg p-5  shadow-lg hover:animate-zoom">
@@ -22,11 +22,11 @@ const MenuCard = ({ pizzas }) => {
 
             {/* Tags */}
             <div className="flex gap-2 mb-3">
-              <span className="px-3 py-1 border border-gray-300 rounded-full text-sm text-gray-700">
-                mashroom
+              <span className="px-3 py-1 border border-gray-300 rounded-full text-sm text-[#336850] font-serif">
+                {item}
               </span>
-              <span className="px-3 py-1 border border-gray-300 rounded-full text-sm text-gray-700">
-                barbiQ sauce
+              <span className="px-3 py-1 border border-gray-300 rounded-full text-sm text-[#3b745a] font-serif">
+                {items}
               </span>
             </div>
 

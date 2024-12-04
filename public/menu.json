@@ -14,8 +14,8 @@
       "name": "Pepperoni Pizza",
       "price": "$75.49",
       "button": "Add to Cart",
-      "item":"basil leaves",
-      "items":"pepperoni slices"
+      "item":"basil ",
+      "items":"pepperoni "
     },
     {
       "id": 3,
@@ -31,41 +31,53 @@
       "image":"https://i.ibb.co.com/NNHXFbz/pizza4.png",
       "name": "Hawaiian Pizza",
       "price": "$45.00",
-      "button": "Add to Cart"
+      "button": "Add to Cart",
+      "item":"Pineapple chunks",
+      "items":" ham"
     },
     {
       "id": 5,
       "image":"https://i.ibb.co.com/6twD97y/pizza5.png",
       "name": "Meat Lovers Pizza",
       "price": "$80.50",
-      "button": "Purchase Now"
+      "button": "Purchase Now",
+      "item":" Sausage",
+      "items":"ground beef"
     },
     {
       "id": 6,
       "image":"https://i.ibb.co.com/R9QLh6n/pizza6.png",
       "name": "Buffalo  Pizza",
       "price": "$68.75",
-      "button": "Add to Cart"
+      "button": "Purchase now",
+      "item":"buffalo sauce",
+      "items":"olives"
     },
     {
       "id": 7,
       "image":"https://i.ibb.co.com/5GTmgtw/pizza7.png",
       "name": "Truffle Pizza",
       "price": "$62.99",
-      "button": "Purchase Now"
+      "button": "Purchase Now",
+      "item":" olives",
+      "items":"mozzarella"
     },
     {
       "id": 8,
       "image":"https://i.ibb.co.com/fNTGW1M/pizza8.png",
       "name": "Spinach and Feta Pizza",
       "price": "$35.00",
-      "button": "Add to Cart"
+      "button": "Add to Cart",
+      "item":"feta cheese",
+      "items":"olives"
     },
     {
       "id": 9,
       "image":"https://i.ibb.co.com/DgYX4JB/pizza9.png",
       "name": "Veggie Pizza",
       "price": "$82.30",
-      "button": "Purchase Now"
+      "button": "Purchase Now",
+      "item":"Bell peppers",
+      "items":"mozzarella"
     }
   ]
