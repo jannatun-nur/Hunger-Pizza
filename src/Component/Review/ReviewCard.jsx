@@ -38,7 +38,7 @@ const ReviewCard = () => {
   const { name, image } = data[currentIndex];
 
   return (
-    <div className="lg:flex lg:justify-around">
+    <div className="lg:flex lg:justify-around columns-1 md:flex md:justify-between">
       <section>
         <div className="flex justify-center items-center gap-8 p-5 ">
           <div className="bg-teal-700 text-white p-6 rounded-lg flex flex-col items-center w-80 shadow-md">
@@ -69,9 +69,9 @@ const ReviewCard = () => {
 
       <section>
         {/* Right Card */}
-        <div className="border border-teal-600 p-6 rounded-lg flex flex-col items-center w-7/12 h-[480px] shadow-md">
+        <div className="border border-teal-600 mx-2 p-6 rounded-lg flex flex-col items-center lg:w-7/12 lg:h-[480px] md:h-[570px] h-[530px] shadow-md">
           {/* Statistics */}
-          <div className="flex mb-4 gap-20">
+          <div className="flex mb-4 lg:gap-20 gap-10">
             <div className="flex items-center gap-2 text-teal-700">
               <span className=" text-blue-600 text-4xl">
                 <FaFacebook />
@@ -91,8 +91,8 @@ const ReviewCard = () => {
           </div>
 
           {/* Description */}
-          <p className="text-center font-semibold lg:text-xl italic text-gray-700 py-3">
-            “Welcome to <span className="text-teal-600 font-bols font-serif lg:text-2xl">HUNGER PIZZA</span> website, your go-to destination for
+          <p className="text-center font-semibold lg:text-xl  italic text-gray-700 py-3 md:text-xl">
+            “Welcome to <span className="text-teal-600 font-bold font-serif lg:text-2xl">HUNGER PIZZA</span> website, your go-to destination for
             mouthwatering, freshly baked pizzas! We are giving our service since 2007 
             and sending fresh pizzas at your door in just time.
             Customize your pizza just the way you like it, adding your favorite
