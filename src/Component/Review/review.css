@@ -1,0 +1,8 @@
+.slider-container {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-container.sliding {
+    transform: translateX(-100%);
+  }
+  

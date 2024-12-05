@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
+import "./review.css"; // Add this for the custom animation styles
 
 const ReviewCard = () => {
   const data = [
@@ -30,11 +31,16 @@ const ReviewCard = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isSliding, setIsSliding] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-    }, 2000); // Change every 2 seconds
+      setIsSliding(true); // Start the slide animation
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        setIsSliding(false); // Reset sliding state
+      }, 500); // Matches the CSS transition duration
+    }, 2000);
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
@@ -42,12 +48,12 @@ const ReviewCard = () => {
   const { name, image, des } = data[currentIndex];
 
   return (
-    <div className="lg:flex lg:justify-between columns-1 md:flex md:justify-between">
-      <section>
+    <div className="lg:flex lg:justify-between columns-1 md:flex md:justify-between mt-20">
+      <section className={`slider-container ${isSliding ? "sliding" : ""}`}>
         <div className="flex justify-center items-center gap-8 p-5">
-          <div className="bg-teal-700 text-white p-6 rounded-lg flex flex-col items-center lg:w-[500px] shadow-md">
+          <div className="bg-teal-700 text-white p-6 rounded-lg flex flex-col items-center lg:w-[500px] md:w-[300px] shadow-md">
             {/* Avatar */}
-            <div className="lg:w-28 lg:h-28 rounded-full bg-white flex items-center justify-center mb-4">
+            <div className="lg:w-28 lg:h-28 md:w-24 md:h-24 h-16 w-16 rounded-full bg-white flex items-center justify-center mb-4">
               <img src={image} alt={name} className="rounded-full" />
             </div>
 
@@ -68,15 +74,15 @@ const ReviewCard = () => {
               ))}
             </div>
 
-            <div className="font-serif"> {des} </div>
+            {/* Description */}
+            <div className="font-serif lg:text-xl text-xs"> {des} </div>
           </div>
         </div>
       </section>
 
       <section>
         {/* Right Card */}
-        <div className="border border-teal-600 mx-2 p-6 rounded-lg flex flex-col items-center lg:w-7/12 lg:h-[480px] md:h-[570px] h-[530px] shadow-md">
-          {/* Statistics */}
+        <div className="border border-teal-600 mx-2 p-6 rounded-lg flex flex-col items-center lg:w-[500px] lg:h-[480px] md:h-[570px] h-[530px] shadow-md">
           <div className="flex mb-4 lg:gap-20 gap-10">
             <div className="flex items-center gap-2 text-teal-700">
               <span className="text-blue-600 text-4xl">
@@ -96,14 +102,13 @@ const ReviewCard = () => {
             </div>
           </div>
 
-          {/* Description */}
           <p className="text-center font-semibold lg:text-xl italic text-gray-700 py-3 md:text-xl">
             “Welcome to{" "}
             <span className="text-teal-600 font-bold font-serif lg:text-2xl">
               HUNGER PIZZA
             </span>{" "}
             website, your go-to destination for mouthwatering, freshly baked
-            pizzas! We are giving our service since 2007 and sending fresh
+            pizzas!  We are giving our service since 2007 and sending fresh
             pizzas at your door in just time. Customize your pizza just the way
             you like it, adding your favorite toppings and sauces. Whether
             you're dining solo, with friends, or hosting a party, we've got you
