@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaFacebook } from "react-icons/fa";
 
 const ReviewCard = () => {
   const data = [
@@ -68,26 +69,38 @@ const ReviewCard = () => {
 
       <section>
         {/* Right Card */}
-        <div className="border border-teal-600 p-6 rounded-lg flex flex-col items-center w-6/12 shadow-md">
+        <div className="border border-teal-600 p-6 rounded-lg flex flex-col items-center w-7/12 h-[480px] shadow-md">
           {/* Statistics */}
-          <div className="flex gap-4 mb-4">
+          <div className="flex mb-4 gap-20">
             <div className="flex items-center gap-2 text-teal-700">
-              <span className="text-xl">👍</span>
-              <span className="font-semibold">30+ k</span>
+              <span className=" text-blue-600 text-4xl">
+                <FaFacebook />
+              </span>
+              <span className="font-semibold text-2xl text-blue-600 font-serif">
+                30k
+              </span>
             </div>
             <div className="flex items-center gap-2">
-              <button className="bg-blue-500 text-white px-3 py-1 rounded-full">
+              <button className="bg-blue-500 text-white px-4 py-1 rounded-ss-xl text-xl">
                 Follow
               </button>
-              <span className="text-gray-700 font-semibold">2M</span>
+              <span className=" font-semibold text-2xl text-blue-600 font-serif">
+                2M
+              </span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-center text-gray-700 italic">
-            “hdhfdsfh ihgkdfpo uf iysfh jjfkalfhd jhdjfkhdhf jdibcjxzc kvcjkbvc
-            jbcnjvkc bk vjoh dlfhd fdlfhdlflsdlk sdkjf lsdfklsdhf bulf uyhifud
-            ugdf uidfy “
+          <p className="text-center font-semibold lg:text-xl italic text-gray-700 py-3">
+            “Welcome to <span className="text-teal-600 font-bols font-serif lg:text-2xl">HUNGER PIZZA</span> website, your go-to destination for
+            mouthwatering, freshly baked pizzas! We are giving our service since 2007 
+            and sending fresh pizzas at your door in just time.
+            Customize your pizza just the way you like it, adding your favorite
+            toppings and sauces. Whether you're dining solo, with friends, or
+            hosting a party, we've got you covered. Our user-friendly website
+            ensures a seamless ordering experience, with fast delivery to your
+            doorstep. Don't miss out on exclusive deals and offers. Savor the
+            taste of perfection—order your dream pizza today!“
           </p>
         </div>
       </section>
