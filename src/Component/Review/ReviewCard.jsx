@@ -7,21 +7,25 @@ const ReviewCard = () => {
       id: 1,
       image: "https://i.ibb.co.com/yVkM94B/1.png",
       name: "Roushan Mike",
+      des:"This pizza was an absolute delight! The crust was perfectly crispy on the outside and soft on the inside. The cheese melted in my mouth, and the tangy tomato sauce tied it all together beautifully. A timeless classic done right!"
     },
     {
       id: 2,
       image: "https://i.ibb.co.com/tCKPCTk/2.png",
       name: "Hushan Derik",
+      des:"I loved the variety of toppings available. I tried the BBQ chicken pizza, and it was phenomenal! The smoky flavor of the chicken combined with the sweetness of the BBQ sauce created a taste explosion."
     },
     {
       id: 3,
       image: "https://i.ibb.co.com/VNpzcXc/3.png",
       name: "Twink Avik",
+      des:"We ordered a large pizza for a family dinner, and it was a hit. The toppings were generously spread, and the balance of flavors was spot-on. It brought everyone to the table, and there wasn't a single slice left!"
     },
     {
       id: 4,
       image: "https://i.ibb.co.com/5FysSDw/4.png",
       name: "Arik Erish",
+      des:"Nothing beats this pizza when you're up late working or binge-watching your favorite show. The delivery was fast, and the pizza arrived hot and fresh. The gooey cheese and pepperoni were exactly what I needed to end the day on a high note."
     },
   ];
 
@@ -63,6 +67,8 @@ const ReviewCard = () => {
                 </span>
               ))}
             </div>
+
+            
           </div>
         </div>
       </section>
@@ -105,6 +111,7 @@ const ReviewCard = () => {
         </div>
       </section>
     </div>
+   
   );
 };
 
